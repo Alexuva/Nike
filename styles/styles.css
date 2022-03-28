@@ -1,0 +1,315 @@
+@charset "UTF-8";
+/*COLORS*/
+/*FONTS*/
+@font-face {
+  font-family: "Oxygen Light";
+  src: url(fonts/Oxygen-Light.ttf);
+}
+@font-face {
+  font-family: "Oxygen Regular";
+  src: url(fonts/Oxygen-Regular.ttf);
+}
+@font-face {
+  font-family: "Kiona-Regular";
+  src: url(fonts/Kiona-Regular.ttf);
+}
+/*RESET*/
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #0050B6 0%, #DAF3FF 100%);
+  background-repeat: no-repeat;
+  /*CONTENEDOR PRINCIPAL*/
+}
+body .container {
+  width: 100%;
+  max-width: 1440px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  /*CABECERA*/
+  /*CARACTERÍSTICAS BOTA*/
+  /*JUGADORES*/
+}
+body .container .header {
+  width: 100%;
+  height: 33%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 10%;
+}
+body .container .header .logo {
+  width: 15%;
+  margin-right: 80%;
+}
+body .container .header .logo img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+body .container .header .heroimg {
+  width: 65%;
+  position: relative;
+}
+body .container .header .heroimg img {
+  width: 100%;
+  height: auto;
+}
+body .container .header .heroimg .slogan {
+  max-width: 60%;
+  height: 15%;
+  position: absolute;
+  bottom: 0%;
+  left: 20%;
+  text-align: center;
+}
+body .container .header .heroimg .slogan h1 {
+  font-family: "Kiona-Regular";
+  color: #f6fcff;
+  font-size: 2.5rem;
+  margin-top: 2%;
+}
+body .container .header .heroimg .slogan img {
+  width: 10%;
+  height: 10%;
+  margin-top: 2%;
+}
+body .container .galery {
+  width: 100%;
+  min-height: 33%;
+  max-height: 33%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10%;
+  /*EXPOSITOR*/
+  /*DESCRIPCIONES*/
+}
+body .container .galery .pics {
+  min-width: 45%;
+  max-width: 45%;
+  min-height: 100%;
+  margin: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .container .galery .pics .img {
+  max-width: 80%;
+  max-height: 400px;
+}
+body .container .galery .description {
+  min-width: 45%;
+  max-width: 45%;
+  min-height: 100%;
+  max-height: 100%;
+  margin: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .container .galery .description .caracteristic {
+  min-width: 100%;
+  min-height: 40%;
+  max-height: 40%;
+  margin-bottom: 5%;
+}
+body .container .galery .description .caracteristic .titles {
+  min-width: 100%;
+  min-height: 50%;
+  max-height: 50%;
+  font-size: 1.5rem;
+}
+body .container .galery .description .caracteristic .titles h2 {
+  width: 50%;
+  margin: 0px auto;
+  padding: 2%;
+  font-family: "Kiona-Regular";
+  color: #f6fcff;
+  text-align: center;
+  border-bottom: 1px solid #f6fcff;
+}
+body .container .galery .description .caracteristic .description-box {
+  width: 100%;
+  min-height: 50%;
+  max-height: 50%;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.3rem;
+  text-align: center;
+}
+body .container .galery .description .caracteristic .description-box .descriptions {
+  min-width: 90%;
+  max-width: 90%;
+  min-height: 100%;
+  max-height: 100%;
+  margin: 0px auto;
+  padding: 2%;
+  font-family: "Oxygen Regular";
+  color: #f6fcff;
+}
+body .container .galery .description .parts {
+  max-width: 100%;
+  max-height: 60%;
+  min-height: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+body .container .galery .description .parts .pic {
+  width: 50%;
+  height: 20%;
+  max-height: 100px;
+  max-width: 200px;
+  margin: 2%;
+  overflow: hidden;
+  filter: brightness(0.8);
+  transition: all 0.5s ease-in-out;
+  border: 1px solid #f6fcff;
+}
+body .container .galery .description .parts .pic img {
+  width: 100%;
+  margin: 0px auto;
+  object-fit: cover;
+}
+body .container .galery .description .parts .pic:hover {
+  filter: brightness(1.2);
+  cursor: pointer;
+}
+body .container .galery .description .parts #pic2 img {
+  width: 150%;
+}
+body .container .players {
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 33%;
+  max-height: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2.5%;
+}
+body .container .players .player_video {
+  display: none;
+  width: 100%;
+  height: 100%;
+  min-height: 745px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 79, 182, 0.124);
+}
+body .container .players .player_video .cerrar {
+  width: 6.5%;
+  height: 5%;
+  margin-left: 20%;
+  margin-top: 1%;
+  font-family: "Kiona-Regular";
+  font-size: 1.5rem;
+  color: #f6fcff;
+  filter: brightness(0.9);
+  transition: all 0.5s ease;
+}
+body .container .players .player_video .cerrar:hover {
+  cursor: pointer;
+  filter: brightness(1.2);
+}
+body .container .players .player_video .video {
+  width: 35%;
+  margin: 1%;
+  border: 1px solid #f6fcff;
+}
+body .container .players .players_title {
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 35%;
+  min-height: 35%;
+  text-align: center;
+}
+body .container .players .players_title h2 {
+  max-width: 50%;
+  min-width: 50%;
+  margin: 0px auto;
+  padding: 1%;
+  font-family: "Kiona Regular";
+  color: #f6fcff;
+  font-size: 2.4rem;
+  border-bottom: 1px solid #f6fcff;
+}
+body .container .players .players_title p {
+  padding: 1%;
+  font-family: "Oxygen Regular";
+  color: #f6fcff;
+  font-size: 1.2rem;
+}
+body .container .players .cards {
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 70%;
+  min-height: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+body .container .players .cards .card {
+  min-width: 33%;
+  max-width: 33.33%;
+  max-height: 610px;
+  border: 1px solid #f6fcff;
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
+body .container .players .cards .card img {
+  max-width: 100%;
+  backdrop-filter: blur(3px);
+  filter: brightness(0.8);
+}
+body .container .players .cards #card1 {
+  background: url(/images/CR7_portada.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body .container .players .cards #card2 {
+  background: url(/images/Mbappe_portada.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body .container .players .cards #card3 {
+  background: url(/images/Neymar_portada.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body .container .players .cards #card1:hover {
+  background: url(/images/CR7GIF.gif);
+  cursor: pointer;
+}
+body .container .players .cards #card2:hover {
+  background: url(/images/MbappeGIF.gif);
+  cursor: pointer;
+}
+body .container .players .cards #card3:hover {
+  background: url(/images/NeymarGIF.gif);
+  cursor: pointer;
+}
+body .container .players .cards .card:hover img {
+  filter: brightness(1);
+}
+
+/*# sourceMappingURL=styles.css.map */
