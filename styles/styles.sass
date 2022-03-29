@@ -104,7 +104,6 @@ body
             flex-direction: row
             justify-content: center
             align-items: center
-            margin-bottom: 10%
 
 
             /*---EXPOSITOR---*/
@@ -221,7 +220,21 @@ body
                     #pic2 img
                         width: 150%
 
+        /*GRUPO IMAGENES*/
+        .live-pics
+            max-width: 100%
+            display: flex
+            flex-direction: row
+            justify-content: center
+            align-items: center
+            margin-bottom: 5%
+            border: 1px solid $Secondary
+
+            img
+                max-width: 33.33%
         
+
+
         /*---JUGADORES---*/
         .players
             max-width: 100%
@@ -342,17 +355,17 @@ body
 
 
                 #card1
-                    background: url(/images/CR7_portada.png)
+                    background: url(/images/CR7_portada.webp)
                     background-repeat: no-repeat
                     background-size: cover
                 
                 #card2
-                    background: url(/images/Mbappe_portada.png)
+                    background: url(/images/Mbappe_portada.webp)
                     background-repeat: no-repeat
                     background-size: cover
                 
                 #card3
-                    background: url(/images/Neymar_portada.png)
+                    background: url(/images/Neymar_portada.webp)
                     background-repeat: no-repeat
                     background-size: cover
 
@@ -424,7 +437,8 @@ body
                     font-family: 'Oxygen Regular', 'Open Sans'
                     color: $Secondary 
                     font-size: 1.2rem
-                    margin-bottom: 3%  
+                    margin-bottom: 3% 
+                    text-align: center 
 
                 .buttons
                     width: 100%
@@ -468,8 +482,7 @@ body
         .buynow
             width: 80%
             height: 33%
-            min-height: 20rem
-            margin-bottom: 10% 
+            min-height: 14rem
 
             display: flex
             flex-direction: row
@@ -524,7 +537,22 @@ body
                 width: 43%
                 height: 100%
 
+                img
+                    width: 100%
+
+        /*JUST DO IT*/
+        .just-do-it
+            max-width: 90%
+            object-fit: contain
+
+            img
+                width: 100%
+
+/*MEDIA-QUERYS*/
+
 @media ( max-width: 1024px )
+
+    /*TARJETAS JUGADORES*/
     body .container .players .cards .card h2
         top: 70%
 
@@ -533,7 +561,24 @@ body
 
     body .container .players .player_video
         min-height: 0px
+    
+    /*APARTADO SOCIAL*/
+    body .container .social .social_title
+        margin-left: 5%
+    
+    body .container .social .social_title p
+        margin-bottom: 6%
 
+    body .container .social .social_title .buttons .button
+        width: 25%
+    
+    body .container .social .social_title .buttons #TW
+        width: 22%
+    
+    body .container .social .social_title .buttons #IG
+        width: 20%
+
+    /*APARTADO COMPRA*/
     body .container .buynow .buy-button
         width: 40%
     
@@ -541,6 +586,8 @@ body
         width: 55%
 
 @media (max-width: 768px)
+    
+    /*PARTES BOTA*/
     body .container .galery
         flex-wrap: wrap
 
@@ -550,6 +597,7 @@ body
     body .container .galery .description
         max-width: none
     
+    /*APARTADO SOCIAL*/
     body .container .social
         flex-direction: column
     
@@ -560,16 +608,24 @@ body
         margin-top: 2%
         width: 80%
     
+    /*APARTADO COMPRA*/
     body .container .buynow
         flex-direction: column-reverse
     
     body .container .buynow .buy-button
-        width: 80%
+        margin-top: 1%
+        margin-bottom: 1%
+        width: 70%
+    
+    body .container .buynow .buy-button .buy
+        width: 45%
     
     body .container .buynow .buy_img
-        width: 80%
+        width: 70%
 
 @media (max-width: 685px)
+
+    /*CABECERA*/
     body .container .header .logo img
         width: 35%
     
@@ -584,10 +640,13 @@ body
     body .container .header .heroimg .slogan img
         margin-right: 0%
     
+    /*APARTADO JUGADORES*/
     body .container .players .cards #card3 h2
         top: 83%
 
 @media (max-width: 631px)
+
+    /*APARTADO JUGADORES*/
     body .container .players .players_title h2
         width: 90%
         font-size: 2rem
@@ -602,9 +661,12 @@ body
         top: 81.5%
 
 @media ( max-width: 552px )
+
+    /*APARTADO JUGADORES*/
     body .container .players .players_title h2
         font-size: 1.8rem
     
+    /*APARTADO SOCIAL*/
     body .container .social .social_title h2
         font-size: 1.8rem
     
@@ -621,6 +683,16 @@ body
         width: 21%
 
 @media ( max-width: 426px )
+
+    /*GENERAL*/
+    body .container
+        width: 90%
+    
+    /*CABECERA*/
+    body .container .header
+        margin-top: 10%
+        margin-bottom: 10%
+
     body .container .header .logo img
         width: 40%
     
@@ -629,6 +701,10 @@ body
     
     body .container .header .heroimg .slogan img
         width: 9%
+    
+    /*APARTADO BOTA*/
+    body .container .galery
+        margin-bottom: 10%
 
     body .container .galery .description .caracteristic .description-box
         font-size: 0.8rem
@@ -636,6 +712,12 @@ body
     body .container .galery .description .parts .pic
         width: 40%
     
+    /*SEPARADOR FOTOS*/
+    body .container .live-pics
+        margin-top: 5%
+        margin-left: 2.5%
+    
+    /*APARTADO JUGADORES*/
     body .container .players .players_title h2
         max-width: 90%
     
@@ -653,6 +735,10 @@ body
     
     body .container .players .cards #card3 h2
         left: 33%
+
+    /*APARTADO SOCIAL*/
+    body .container .social
+        margin-bottom: 0%
     
     body .container .social .youtube
         width: 95%
@@ -667,5 +753,16 @@ body
     
     body .container .social .social_title p
         font-size: 1.1rem
+    
+    /*APARTADO COMPRA*/
+    body .container .buynow .buy-button
+        width: 100%
+        margin-top: 5%
+    
+    body .container .buynow .buy-button .models
+        font-size: 1rem
+    
+    body .container .buynow .buy-button .buy
+        font-size: 1rem
     
     

@@ -39,9 +39,11 @@ body .container {
   background: linear-gradient(180deg, #0050B6 0%, #DAF3FF 100%);
   /*---CABECERA--*/
   /*---CARACTERÍSTICAS BOTA---*/
+  /*GRUPO IMAGENES*/
   /*---JUGADORES---*/
   /*---SOCIAL MEDIA---*/
   /*---BUY NOW---*/
+  /*JUST DO IT*/
 }
 body .container .header {
   width: 100%;
@@ -100,7 +102,6 @@ body .container .galery {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10%;
   /*---EXPOSITOR---*/
   /*---DESCRIPCIONES---*/
 }
@@ -201,6 +202,18 @@ body .container .galery .description .parts .pic:hover {
 }
 body .container .galery .description .parts #pic2 img {
   width: 150%;
+}
+body .container .live-pics {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+  border: 1px solid #f6fcff;
+}
+body .container .live-pics img {
+  max-width: 33.33%;
 }
 body .container .players {
   max-width: 100%;
@@ -306,17 +319,17 @@ body .container .players .cards .card h2 {
   text-align: center;
 }
 body .container .players .cards #card1 {
-  background: url(/images/CR7_portada.png);
+  background: url(/images/CR7_portada.webp);
   background-repeat: no-repeat;
   background-size: cover;
 }
 body .container .players .cards #card2 {
-  background: url(/images/Mbappe_portada.png);
+  background: url(/images/Mbappe_portada.webp);
   background-repeat: no-repeat;
   background-size: cover;
 }
 body .container .players .cards #card3 {
-  background: url(/images/Neymar_portada.png);
+  background: url(/images/Neymar_portada.webp);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -383,6 +396,7 @@ body .container .social .social_title p {
   color: #f6fcff;
   font-size: 1.2rem;
   margin-bottom: 3%;
+  text-align: center;
 }
 body .container .social .social_title .buttons {
   width: 100%;
@@ -422,8 +436,7 @@ body .container .social .social_title .buttons #IG:hover {
 body .container .buynow {
   width: 80%;
   height: 33%;
-  min-height: 20rem;
-  margin-bottom: 10%;
+  min-height: 14rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -472,8 +485,20 @@ body .container .buynow .buy_img {
   width: 43%;
   height: 100%;
 }
+body .container .buynow .buy_img img {
+  width: 100%;
+}
+body .container .just-do-it {
+  max-width: 90%;
+  object-fit: contain;
+}
+body .container .just-do-it img {
+  width: 100%;
+}
 
+/*MEDIA-QUERYS*/
 @media (max-width: 1024px) {
+  /*TARJETAS JUGADORES*/
   body .container .players .cards .card h2 {
     top: 70%;
   }
@@ -486,6 +511,28 @@ body .container .buynow .buy_img {
     min-height: 0px;
   }
 
+  /*APARTADO SOCIAL*/
+  body .container .social .social_title {
+    margin-left: 5%;
+  }
+
+  body .container .social .social_title p {
+    margin-bottom: 6%;
+  }
+
+  body .container .social .social_title .buttons .button {
+    width: 25%;
+  }
+
+  body .container .social .social_title .buttons #TW {
+    width: 22%;
+  }
+
+  body .container .social .social_title .buttons #IG {
+    width: 20%;
+  }
+
+  /*APARTADO COMPRA*/
   body .container .buynow .buy-button {
     width: 40%;
   }
@@ -495,6 +542,7 @@ body .container .buynow .buy_img {
   }
 }
 @media (max-width: 768px) {
+  /*PARTES BOTA*/
   body .container .galery {
     flex-wrap: wrap;
   }
@@ -507,6 +555,7 @@ body .container .buynow .buy_img {
     max-width: none;
   }
 
+  /*APARTADO SOCIAL*/
   body .container .social {
     flex-direction: column;
   }
@@ -520,19 +569,27 @@ body .container .buynow .buy_img {
     width: 80%;
   }
 
+  /*APARTADO COMPRA*/
   body .container .buynow {
     flex-direction: column-reverse;
   }
 
   body .container .buynow .buy-button {
-    width: 80%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 70%;
+  }
+
+  body .container .buynow .buy-button .buy {
+    width: 45%;
   }
 
   body .container .buynow .buy_img {
-    width: 80%;
+    width: 70%;
   }
 }
 @media (max-width: 685px) {
+  /*CABECERA*/
   body .container .header .logo img {
     width: 35%;
   }
@@ -551,11 +608,13 @@ body .container .buynow .buy_img {
     margin-right: 0%;
   }
 
+  /*APARTADO JUGADORES*/
   body .container .players .cards #card3 h2 {
     top: 83%;
   }
 }
 @media (max-width: 631px) {
+  /*APARTADO JUGADORES*/
   body .container .players .players_title h2 {
     width: 90%;
     font-size: 2rem;
@@ -573,10 +632,12 @@ body .container .buynow .buy_img {
   }
 }
 @media (max-width: 552px) {
+  /*APARTADO JUGADORES*/
   body .container .players .players_title h2 {
     font-size: 1.8rem;
   }
 
+  /*APARTADO SOCIAL*/
   body .container .social .social_title h2 {
     font-size: 1.8rem;
   }
@@ -598,6 +659,17 @@ body .container .buynow .buy_img {
   }
 }
 @media (max-width: 426px) {
+  /*GENERAL*/
+  body .container {
+    width: 90%;
+  }
+
+  /*CABECERA*/
+  body .container .header {
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
   body .container .header .logo img {
     width: 40%;
   }
@@ -610,6 +682,11 @@ body .container .buynow .buy_img {
     width: 9%;
   }
 
+  /*APARTADO BOTA*/
+  body .container .galery {
+    margin-bottom: 10%;
+  }
+
   body .container .galery .description .caracteristic .description-box {
     font-size: 0.8rem;
   }
@@ -618,6 +695,13 @@ body .container .buynow .buy_img {
     width: 40%;
   }
 
+  /*SEPARADOR FOTOS*/
+  body .container .live-pics {
+    margin-top: 5%;
+    margin-left: 2.5%;
+  }
+
+  /*APARTADO JUGADORES*/
   body .container .players .players_title h2 {
     max-width: 90%;
   }
@@ -642,6 +726,11 @@ body .container .buynow .buy_img {
     left: 33%;
   }
 
+  /*APARTADO SOCIAL*/
+  body .container .social {
+    margin-bottom: 0%;
+  }
+
   body .container .social .youtube {
     width: 95%;
     margin-right: 3%;
@@ -658,6 +747,20 @@ body .container .buynow .buy_img {
 
   body .container .social .social_title p {
     font-size: 1.1rem;
+  }
+
+  /*APARTADO COMPRA*/
+  body .container .buynow .buy-button {
+    width: 100%;
+    margin-top: 5%;
+  }
+
+  body .container .buynow .buy-button .models {
+    font-size: 1rem;
+  }
+
+  body .container .buynow .buy-button .buy {
+    font-size: 1rem;
   }
 }
 

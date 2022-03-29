@@ -3,25 +3,25 @@
 const pic1 = {
     title: 'carcasa', 
     description: 'La nueva carcasa de flyknit presenta un hilo trenzado que ha favorecido la interacción en contacto con el balón además de conseguir que el confort se haya aumentado. La tecnología ACC sigue presente y la capa sintética de Nike Skin recubre toda la superficie para proteger el hilo flyknit',
-    src: '/images/puntera.png' 
+    src: '/images/puntera.webp' 
 }
 
 const pic2 = {
     title: 'chasis',
     description: 'Con la evolución de la nueva carcasa Nike ha implementado un chasis que mantiene la estructura de esta además de envolver el pie con un ajuste 360. El mullido del talón se combina con una plantilla antideslizante para evitar que ocurran deslizamientos del pie en el interior de la bota',
-    src:'/images/perfil.png'
+    src:'/images/perfil.webp'
 }
 
 const pic3 = {
     title: 'suela',
     description: 'La distribución y forma de los tacos se ha mantenido intacta, al igual que la placa anatómica pero a su vez que ha modificado el módulo del metatarso con el objetivo de hacer que esta sea un poco más flexible sin reducir la reactividad de la placa',
-    src: '/images/suela.png'
+    src: '/images/suela.webp'
 }
 
 const pic4 = {
     title: 'peso',
     description: 'Todas estas características en una bota con un peso de 200 gramos',
-    src:'/images/perfilAlto.png'
+    src:'/images/perfilAlto.webp'
 }
 
 const title = document.querySelector('.title');
