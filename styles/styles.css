@@ -270,7 +270,7 @@ body .container .players .players_title h2 {
   min-width: 50%;
   margin: 0px auto;
   padding: 1%;
-  font-family: "Kiona Regular", "Open Sans";
+  font-family: "Kiona-Regular", "Open Sans";
   color: #f6fcff;
   font-size: 2.4rem;
   border-bottom: 1px solid #f6fcff;
@@ -313,7 +313,7 @@ body .container .players .cards .card h2 {
   top: 80%;
   left: 10%;
   border-bottom: 1px solid #f6fcff;
-  font-family: "Kiona Regular";
+  font-family: "Kiona-Regular";
   font-size: 2.2rem;
   color: #f6fcff;
   text-align: center;
@@ -385,7 +385,7 @@ body .container .social .social_title h2 {
   height: 30%;
   margin-bottom: 2%;
   padding-bottom: 2%;
-  font-family: "Kiona Regular", "Open Sans";
+  font-family: "Kiona-Regular", "Open Sans";
   font-size: 2.3rem;
   color: #f6fcff;
   text-align: center;
@@ -456,7 +456,7 @@ body .container .buynow .buy-button .buy {
   height: 3.1rem;
   background: #0050B6;
   margin-left: 3%;
-  font-family: "Kiona Regular", "Open Sans";
+  font-family: "Kiona-Regular", "Open Sans";
   font-size: 1.1rem;
   font-weight: 500;
   border-radius: 0.2rem;
