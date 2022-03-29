@@ -762,6 +762,10 @@ body .container .just-do-it img {
   }
 
   /*APARTADO COMPRA*/
+  body .container .buynow {
+    width: 90%;
+  }
+
   body .container .buynow .buy-button {
     width: 100%;
     margin-top: 5%;
