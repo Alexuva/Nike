@@ -77,15 +77,15 @@ tarjetas.forEach(tarjeta => {
 
         if(tarjeta.id == 'card1'){
             video.src = 'images/videos/CR7_video.mp4';
-            console.log(video.src);
+            
 
         }else if(tarjeta.id == 'card2'){
             video.src = 'images/videos/Mbappe_video.mp4'
-            console.log(video.src)
+            
 
         }else if(tarjeta.id == 'card3'){
             video.src = 'images/videos/Neymar_video.mp4'
-            console.log(video.src)
+            
         }
     })
 })
